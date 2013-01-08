@@ -1,4 +1,16 @@
 Ac4dApp::Application.routes.draw do
+  get "static_pages/home"
+
+  get "static_pages/inflection"
+
+  get "static_pages/resume"
+
+  get "static_pages/bio"
+
+  get "static_pages/contact"
+
+  get "static_pages/portfolio"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
