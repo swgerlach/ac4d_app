@@ -1,15 +1,10 @@
 Ac4dApp::Application.routes.draw do
-  get "static_pages/home"
-
-  get "static_pages/inflection"
-
-  get "static_pages/resume"
-
-  get "static_pages/bio"
-
-  get "static_pages/contact"
-
-  get "static_pages/portfolio"
+  match '/',          to: 'static_pages#home'
+  match '/inflection',  to: 'static_pages#inflection'
+  match '/resume',      to: 'static_pages#resume'
+  match '/bio',         to: 'static_pages#bio'
+  match '/contact',     to: 'static_pages#contact'
+  match '/portfolio',   to: 'static_pages#portfolio'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
