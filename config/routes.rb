@@ -1,5 +1,5 @@
 Ac4dApp::Application.routes.draw do
-  match '/',          to: 'static_pages#home'
+  root                  to: 'static_pages#home'
   match '/inflection',  to: 'static_pages#inflection'
   match '/resume',      to: 'static_pages#resume'
   match '/bio',         to: 'static_pages#bio'

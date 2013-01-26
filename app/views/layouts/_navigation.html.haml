@@ -1,0 +1,27 @@
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+
+      %a.btn.btn-navbar{data_target: '.nav-collapse', data_toggle: 'collapse'}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+
+      .row
+        .offset3
+          %a.brand{href: root_path}
+            %img{src: 'assets/Beard-40px.png'}
+
+      .row
+        .span9.offset3
+          %ul.nav
+            %li{class: "= 'active' if current_page?(resume_path)"}
+              = link_to 'Résumé', resume_path
+            %li{class: "= 'active' if current_page?(inflection_path)"}
+              = link_to 'Purpose', inflection_path
+            %li{class: "= 'active' if current_page?(portfolio_path)"}
+              = link_to 'Portfolio', portfolio_path
+            %li{class: "= 'active' if current_page?(bio_path)"}
+              = link_to 'Bio', bio_path
+            %li{class: "= 'active' if current_page?(contact_path)"}
+              = link_to 'Contact', contact_path

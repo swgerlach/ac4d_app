@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
+gem 'haml-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -21,7 +22,22 @@ group :assets do
   gem "bootstrap-sass"
 end
 
+# JavasScript libs
 gem 'jquery-rails'
+gem 'modernizr-rails'
+
+# Stylesheet libs
+# gem 'blueprint-rails'
+
+# Ajax request CoffeeScript support
+# gem 'coffeebeans'
+
+# Heroku deployment requirements
+# group :production do
+#   gem 'therubyracer-heroku'
+#   gem 'pg'
+# end
+
 
 
 group :test do
