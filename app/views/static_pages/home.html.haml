@@ -1,1 +1,19 @@
-%h1 'StaticPages#home'
+%section{id: 'home', role: 'home'}
+	%article{id: 'quote', role: 'quote'}
+		%h2 "Learning how to think really means learning how to exercise some control over how and what you think. It means being conscious and aware enough to choose what you pay attention to and to choose how you construct meaning from experience."
+		%h3.right -David Foster Wallace
+		-#
+			.hero-unit
+				%h2 "Some things are truly diminished when simplified."
+				%h3 -Frank Chimero
+	%br
+	%br
+	%article
+		.row
+			.span4
+				= link_to( content_tag(:h1, 'Codes', class: 'image-label'), {controller: 'static_pages', action: 'portfolio', target: 'code'}, id: 'codes' )
+			.span4
+				= link_to( content_tag(:h1, 'Video', class: 'image-label'), {controller: 'static_pages', action: 'portfolio', target: 'video'}, id: 'video' )
+			.span4
+				= link_to( content_tag(:h1, 'Print', class: 'image-label'), {controller: 'static_pages', action: 'portfolio', target: 'print'}, id: 'print' )
+

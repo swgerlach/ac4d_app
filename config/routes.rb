@@ -3,8 +3,8 @@ Ac4dApp::Application.routes.draw do
   match '/inflection',  to: 'static_pages#inflection'
   match '/resume',      to: 'static_pages#resume'
   match '/bio',         to: 'static_pages#bio'
-  match '/contact',     to: 'static_pages#contact'
   match '/portfolio',   to: 'static_pages#portfolio'
+  match '/processflow',  to: 'static_pages#video_process_flow'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

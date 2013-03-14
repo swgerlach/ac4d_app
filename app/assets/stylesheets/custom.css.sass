@@ -1,0 +1,440 @@
+$nbblue: #2fadd8
+$nbblue-dark: #1e98c2
+$nbred: #f1797a
+$nbred-dark: #6e101c
+$textShadow: -1px 1px 1px #FFF
+$boxShadow: 0px 2px 6px #CCC
+
+body
+  font-family: 'Lusitana', serif
+  font-size: 16px
+  letter-spacing: .75px
+  line-height: 32px
+  background-color: #DEDEDE
+
+  a
+    color: $nbblue-dark
+
+
+  h1, h2, h3, h4
+    font-family: 'Open Sans', sans-serif
+    text-shadow: $textShadow
+
+  .navbar
+
+    .brand
+      height: 57px
+      width: 53px
+      position: fixed
+      margin: 0px
+      padding: 0px
+      z-index: 99
+      background: url('../assets/Beard-40px.png') no-repeat
+
+      &:hover
+        background: url('../assets/Alpaca-40px.png') no-repeat
+
+    .nav-collapse
+      margin-left: 10px
+
+    .navbar-inner
+      .nav
+        font-family: 'Open Sans', sans-serif
+        font-weight: bold
+        text-transform: uppercase
+        font-size: 12px
+        li
+          margin: 0px 2px
+          &.active a
+            background-color: #FFFFFF
+
+  #main
+    margin-top: 40px
+
+    h1
+      text-transform: uppercase
+      letter-spacing: -.5px
+      font-family: 'Open Sans', sans-serif
+      margin: 40px 0px
+
+    p
+      margin: 25px 0px
+      text-indent: 25px
+      text-align: justify
+
+    .image-label
+      font-size: 60px
+      line-height: 160px
+      padding-top: 160px
+      opacity: .8
+      margin: 0px
+
+    .popout
+      background: #EEE
+      border-radius: 6px
+      margin: 10px
+      padding: 10px
+      box-shadow: $boxShadow
+
+    /* homepage styles */
+    #home
+      margin: 40px 0px
+
+      #quote
+        margin: 110px 0px 80px 0px
+        border-radius: 6px
+        h2
+          letter-spacing: -.5px
+          font-size: 53px
+          font-weight: 300
+          line-height: 60px
+          text-indent: -20px
+          text-shadow: none
+
+        h3
+          font-family: Georgia
+          font-weight: 300
+          font-style: italic
+
+        .well
+          padding: 40px 60px
+          background: url('../assets/white-diamonds.png') repeat transparent
+
+      .span4
+        height: 300px
+
+        a
+          text-decoration: none
+          position: absolute
+          border-radius: 6px
+
+        h1
+          border: none
+          opacity: 0
+          background: none
+          width: 370px
+          height: 140px
+          margin: 0px
+          padding: 160px 0px 0px 0px
+          text-align: center
+          &:hover
+            background: none
+            opacity: 1
+
+        #codes
+          background: url('../assets/leibniz.jpg') no-repeat
+          h1
+            color: #CCC
+            text-shadow: -2px 2px 4px #222
+
+        #video
+          background: url('../assets/football.jpg') no-repeat
+          h1
+            color: #f0cbd1
+            text-shadow: -2px 2px 4px #6e101c
+
+        #print
+          background: url('../assets/climate.jpg') no-repeat
+          h1
+            color: #d0fdfd
+            text-shadow: -2px 2px 4px #394842
+
+
+    /* resume styles */
+    #resume
+      margin: 80px 0px 0px 0px
+
+      .row
+        border-top: 1px dashed #FFF
+
+
+      h2
+        font-family: 'Open Sans', sans-serif
+        margin: 0px
+        text-align: right
+        text-shadow: $textShadow
+
+      h4
+        font-family: 'Open Sans', sans-serif
+        font-size: 20px
+        line-height: 60px
+        margin: 0px 0px 0px 0px
+        text-align: right
+        text-shadow: none
+        letter-spacing: -.25px
+        height: 70px
+        color: #333333
+        .job-title
+          margin-right: 5px
+
+      .well
+        padding: 19px 40px
+        margin: 0px
+
+      .label
+        border-radius: 3px 3px 3px 3px
+        color: #333333
+        font-family: "Lusitana",serif
+        font-size: 17px
+        font-style: italic
+        font-weight: 300
+        letter-spacing: 0
+        padding: 5px 8px 6px
+        text-transform: none
+        text-shadow: none
+        margin: 18px 3px
+        background-color: $nbred
+
+      .label-inverse
+        color: #333333
+        background-color: $nbblue
+
+      .span3
+        margin-left: 0px
+        padding-left: 20px
+
+      .span9
+        border-left: 1px dashed #FFF
+        margin-left: 9px
+
+      p
+        text-indent: 0px
+        margin: 0px 0px 15px 0px
+        &.last
+          margin: 0px
+
+      .card
+        padding: 19px
+        opacity: 1
+        background: #FFFFFF
+
+
+
+    /* purpose styles */
+    #purpose
+      margin-top: 60px
+
+      .page-header
+        margin: 20px 0px 30px 60px
+        position: fixed
+        z-index: 1
+        text-align: center
+        border-bottom: 1px dashed #FFF
+
+      .popout
+        margin: 200px 0px 0px 0px
+        padding: 10px 40px
+        background: white
+        z-index: 99
+        position: relative
+
+      .path
+        top: 110px
+        position: absolute
+        img
+          background-attachment: fixed
+
+      .target
+        background: transparent
+        position: relative
+        opacity: .6
+        left: 90px
+        z-index: 99
+        top: 170px
+        img
+          background-attachment: fixed
+
+    #portfolio
+      margin-top: 80px
+
+      #code-row
+        position: relative
+        span
+          position: absolute
+          text-align: center
+          left: 100px
+          top: 100px
+          font-family: 'Open Sans', sans-serif
+          font-size: 200px
+          font-weight: bold
+          text-transform: uppercase
+          letter-spacing: 80px
+
+      .popout
+        padding: 0px
+        border-top-width: 0
+        margin: 5px 8px
+        border-radius: 3px
+        box-shadow: 0px 3px 5px #666666
+        .popout-inner
+          padding: 10px
+
+      .custom-brick
+        display: none
+
+      [data-behaviour=brick-link]
+        cursor: pointer
+
+      p
+        line-height: 20px
+        text-align: left
+        text-indent: 0px
+        margin: 0px 10px 10px 10px
+
+      h1
+        margin-bottom: 10px
+
+      .header-sub
+        font-style: italic
+        font-size: 20px
+        line-height: 32px
+
+      .description
+        padding-top: 10px
+        font-style: italic
+
+      h4
+        letter-spacing: 0
+        margin: 15px 0 0 10px
+
+      .round-button
+        background: url("/assets/patterns/dark_fish_skin_@2X.png")
+        border-radius: 20px
+        color: #DDD
+        padding: 0 25px
+        margin: 20px 0 0 8px
+        text-decoration: none
+        &:hover
+          opacity: .9
+          cursor: pointer
+        &:focus
+          outline: 0
+          border: 0
+        &:active
+          outline: 0
+          border: 0
+
+      .modal
+        left: auto
+        margin-left: -30px
+        top: 350px
+        background: none
+        border: none
+        box-shadow: none
+        .close
+          position: absolute
+          z-index: 9999
+          right: 0
+          margin: -35px -30px 0 0
+          color: #444
+          opacity: .5
+          font-size: 40px
+          &:hover
+            opacity: 1
+        .modal-caption
+          font-family: 'Lusitana', serif
+          font-style: italic
+          text-align: center
+          font-size: 18px
+          height: auto
+          span
+            background-color: yellow
+            padding: 5px 10px
+            border-radius: 10px 10px 10px 10px
+            &.num
+              padding: 2px 10px
+              background-color: white
+              margin: 0 5px 0 0
+              border-radius: 10px 10px 10px 10px
+              font-style: normal
+              border: 1px dashed
+        .carousel
+          max-width: 1000px
+          line-height: 35px
+          overflow: visible
+          .carousel-inner
+            width: auto
+            margin-top: 10px
+          .carousel-control
+            background: none
+            border: none
+            font-size: 100px
+            color: #444
+            &.left
+              margin-left: -60px
+            &.right
+              margin-right: -60px
+            &:focus
+              outline: 0
+              border: 0
+            &:active
+              outline: 0
+              border: 0
+      #chartModal
+        width: auto
+        span
+          overflow: visible
+          .close
+            position: absolute
+            right: 0
+            margin: 0 0 0 0
+
+      #magModal
+        .carousel
+          max-width: 900px
+          .carousel-control
+            &.left
+              margin-left: -60px
+            &.right
+              margin-right: -55px
+          .carousel-inner
+            margin-top: 20px
+            max-height: 1000px
+            overflow-y: scroll
+
+  #bio
+    .campy
+      border-radius: 6px
+      box-shadow: $boxShadow
+    .popout
+      padding: 20px
+
+
+
+body.modal-open
+  overflow: hidden
+
+#footer
+  padding: 0 0 30px 0
+
+.modal-backdrop
+  background-color: #FFF
+
+.socials
+  a
+    img
+      padding: 5px 5px
+      &:hover
+        opacity: .9
+
+.well
+  border-radius: 6px
+  border: none
+
+.center
+  text-align: center
+  border-left: none
+
+.uppercase
+  text-transform: uppercase
+
+.right
+  text-align: right
+  border-left: none
+
+
+
+
+
+
+

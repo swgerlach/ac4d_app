@@ -1,0 +1,20 @@
+%div{id: "#{name}"}
+  %h2 #{title}
+  .row
+    .span8.visible-desktop
+      - unless embed ||= false
+        %img.popout{src: "#{src ||= nil}"}
+      - else
+        = embed.html_safe
+    .span12.hidden-desktop
+      - unless embed ||= false
+        %img.popout{src: "#{src ||= nil}"}
+      - else
+        = embed.html_safe
+    .span4.visible-desktop
+      = render "#{name}"
+    .span12.hidden-desktop
+      = render "#{name}"
+  %br
+  %br
+  .page-header

@@ -1,4 +1,4 @@
-!!!5
+!!! 5
 %html
   %head
     %meta{:charset => "utf-8"}
@@ -7,20 +7,19 @@
     %meta{:content => "An Application for the Austin Center for Design", :name => "description"}
     %meta{:content => "Scott Gerlach", :name => "author"}
     = stylesheet_link_tag "application", :media => "all"
-
+    = javascript_include_tag "application"
     = csrf_meta_tags
     = yield(:head)
 
   %body
     %header
+
       = render 'layouts/navigation'
 
-    #main{:role => "main"}
+    #main.clearfix{:role => "main"}
       .container
-        .content
-          .row
-            .span12
-              = yield
+        = yield
 
     %footer
-    = javascript_include_tag "application"
+      = render 'layouts/footer'
+

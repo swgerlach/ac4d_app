@@ -2,26 +2,35 @@
   .navbar-inner
     .container
 
-      %a.btn.btn-navbar{data_target: '.nav-collapse', data_toggle: 'collapse'}
+      %button.btn.btn-navbar.collapsed{'data-target'=> '.nav-collapse', 'data-toggle'=> 'collapse', type: 'button'}
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
+      %a.brand{href: root_path}
+      .nav-collapse.collapse
+        %ul.nav
+          %li{class: "#{'active' if current_page?(resume_path)}"}
+            = link_to 'Résumé', resume_path
+          %li{class: "#{'active' if current_page?(inflection_path)}"}
+            = link_to 'Purpose', inflection_path
+          %li{class: "#{'active' if current_page?(portfolio_path)}"}
+            = link_to 'Portfolio', portfolio_path
+          %li{class: "#{'active' if current_page?(bio_path)}"}
+            = link_to 'Bio', bio_path
 
-      .row
-        .offset3
-          %a.brand{href: root_path}
-            %img{src: 'assets/Beard-40px.png'}
+      .socials{style: "opacity: .5"}
+        %a{href: "http://github.com/swgerlach"}
+          %img.pull-right{src: '/assets/icons/github-small.png'}
 
-      .row
-        .span9.offset3
-          %ul.nav
-            %li{class: "= 'active' if current_page?(resume_path)"}
-              = link_to 'Résumé', resume_path
-            %li{class: "= 'active' if current_page?(inflection_path)"}
-              = link_to 'Purpose', inflection_path
-            %li{class: "= 'active' if current_page?(portfolio_path)"}
-              = link_to 'Portfolio', portfolio_path
-            %li{class: "= 'active' if current_page?(bio_path)"}
-              = link_to 'Bio', bio_path
-            %li{class: "= 'active' if current_page?(contact_path)"}
-              = link_to 'Contact', contact_path
+        %a{href: "http://www.youtube.com/user/swgerlach"}
+          %img.pull-right{src: '/assets/icons/youtube-small.png'}
+
+        %a{href: "https://vimeo.com/longhornscott"}
+          %img.pull-right{src: '/assets/icons/vimeo-small.png'}
+
+        %a{href: "http://twitter.com/Scott_Gerlach"}
+          %img.pull-right{src: '/assets/icons/twitter-small.png'}
+
+        %a{href: "http://www.sbnation.com/users/LonghornScott/blog"}
+          %img.pull-right{src: '/assets/icons/scott-small.png'}
+

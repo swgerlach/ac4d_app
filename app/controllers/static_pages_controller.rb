@@ -11,9 +11,11 @@ class StaticPagesController < ApplicationController
   def bio
   end
 
-  def contact
+  def portfolio
+    @target = params[:target]
+    params.delete(:target)
   end
 
-  def portfolio
+  def video_process_flow
   end
 end

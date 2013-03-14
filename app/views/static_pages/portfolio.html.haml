@@ -1,3 +1,73 @@
 = provide(:title, 'Portfolio')
-%h1 'StaticPages#portfolio'
-%p 'Find me in app/views/static_pages/portfolio.html.erb'
+
+%section{id: 'portfolio', role: 'portfolio'}
+  .container
+    #current-featured
+    #code.custom-brick
+      .page-header
+        %h1 Codes
+        %p.header-sub Theory testing, algorithm design, and reasoning in rule based languages are all areas where I feel at home and love to play.  I have always enjoyed my talent in these areas most when it affords me the opportunity to teach or influence others in a meaningful way.
+      = render 'portfolio_feature', name: 'code_1', title: 'GirlsGuild', src: '../assets/wires/GGFeatured-1000x700px.png'
+      = render 'code_1_modal'
+
+      = render 'portfolio_feature', name: 'code_2', title: 'ScottGerlach', src: '../assets/wires/SG-Homepage-1000x700px.png'
+      = render 'code_2_modal'
+
+      = render 'portfolio_feature', name: 'code_3', title: 'A Factoring Technique', embed: '<iframe src="http://player.vimeo.com/video/61766941" width="770" height="539" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen class="popout"></iframe>'
+    #video.custom-brick
+      .page-header
+        %h1 Video
+        %p.header-sub My interest in making amatuer video is just a byproduct of my obsession with football: specifically in clarifying it's complex action.  I taught myself how to edit and add effects to video as part of a personal goal to produce succint, clear, correct explanations of the sport I love to other fans.
+      = render 'portfolio_feature', name: 'video_1', title: 'Playbook Spotlight: Inside Zone', embed: '<iframe width="770" height="539" src="http://www.youtube.com/embed/ga7iHT5gmjI?list=PL4105074F3E4964DB" frameborder="0" allowfullscreen class="popout"></iframe>'
+      = render 'portfolio_feature', name: 'video_2', title: 'Game Breakdown: Texas Tech', embed: '<iframe src="http://player.vimeo.com/video/53188541" width="770" height="539" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen class="popout"></iframe>'
+      = render 'video_2_modal'
+      = render 'portfolio_feature', name: 'video_3', title: 'Kansas State Nightcall', embed: '<iframe src="http://player.vimeo.com/video/61769498" width="770" height="539" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen class="popout"></iframe>'
+
+    #print.custom-brick
+      .page-header
+        %h1 Print
+        %p.header-sub The considered, printed word is my favorite format for exchanging ideas.  I enjoy reading for the simple magic of it's ability to transport my thoughts.  I also believe that through thoughtful debate and discussion we have the most significant sort of intential impact on each other.
+      = render 'portfolio_feature', name: 'print_1', title: 'The Power O', src: '../assets/wires/FB-PowerO-1000x700px.png'
+      = render 'portfolio_feature', name: 'print_2', title: 'Decoding Diaz: A Research Report', src: '../assets/wires/FB-DiazD-1000x700px.png'
+      = render 'portfolio_feature', name: 'print_3', title: 'Looking Back to See Forward', src: '../assets/wires/LookingBack-1000x700px.png'
+      = render 'print_3_modal'
+
+    #code-row.row
+      .span4
+        %img.popout{src: '../assets/wires/GGFeatured-1000x700px.png', data: {behaviour: 'brick-link', target: 'code_1'}}
+      .span4
+        %img.popout{src: '../assets/wires/SG-Homepage-1000x700px.png', data: {behaviour: 'brick-link', target: 'code_2'}}
+      .span4
+        %img.popout{src: '../assets/wires/FactoringTrinomials-1000x700px.jpg', data: {behaviour: 'brick-link', target: 'code_3'}}
+    %br
+    #video-row.row
+      .span4
+        %img.popout{src: '../assets/wires/FB-PlaybookSpotlight-1000x700px.png', data: {behaviour: 'brick-link', target: 'video_1'}}
+      .span4
+        %img.popout{src: '../assets/wires/FB-TexasTech-1000x700px.png', data: {behaviour: 'brick-link', target: 'video_2'}}
+      .span4
+        %img.popout{src: '../assets/wires/KSU-Nightcall-1000x700px.png', data: {behaviour: 'brick-link', target: 'video_3'}}
+    %br
+    #print-row.row
+      .span4
+        %img.popout{src: '../assets/wires/FB-PowerO-1000x700px.png', data: {behaviour: 'brick-link', target: 'print_1'}}
+      .span4
+        %img.popout{src: '../assets/wires/FB-DiazD-1000x700px.png', data: {behaviour: 'brick-link', target: 'print_2'}}
+      .span4
+        %img.popout{src: '../assets/wires/LookingBack-1000x700px.png', data: {behaviour: 'brick-link', target: 'print_3'}}
+
+    %br
+    %br
+- if @target
+  %script{type: 'text/javascript'}
+    jQuery( function() {
+    window.history.replaceState('ac4d Application | Portfolio', "ac4d Application | Portfolio", "/portfolio");
+    $('.custom-brick').hide();
+    $('div[id^="#{@target}"]').show();
+    $('html, body').animate({scrollTop: $('##{@target}').offset().top() - 60}, 2000);
+    });
+  - @target = nil
+
+
+
+

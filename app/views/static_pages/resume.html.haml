@@ -1,3 +1,89 @@
 = provide(:title, 'Résumé')
-%h1 'StaticPages#resume'
-%p 'Find me in app/views/static_pages/resume.html.erb'
+%section{id: 'resume', role: 'resume'}
+	%article
+		.row{style: 'border-top: none;'}
+			.span.pull-left
+				%h1 Scott Gerlach
+			.span.pull-right{style: 'border-left: 1px dashed #FFF;'}
+				.popout
+					%address.well.card
+						%table
+							%tr
+								%td 615 W. Johanna St.
+							%tr
+								%td Austin TX, 78704
+							%tr
+								%td
+									%a{href: "mailto:'Scott Gerlach'<swgerlach@gmail.com>"} swgerlach@gmail.com
+		%br
+
+		.row
+			.span3
+				%h2.uppercase Profile
+			.span9
+				.popout
+					.well
+						%p.last I care greatly about learning and I am enthusiastic about sharing ideas.  I have a successful background in tutoring and teaching that is informed by a deep fluency in math and physics.  I feel I contribute most in roles that emphasize creative strategic planning, system design, and theory testing.  I believe in activities that help people develop an appreciation for rationality, subtlety, and complex analysis.  I would like to work on projects that leverage design to affect meaningful change in people’s lives.
+		%br
+
+		.row
+			.span3
+				%h2.uppercase Experience
+			.span9
+				.popout
+					%h4.uppercase
+						%span.label.label-inverse.pull-right 2006-Present
+						%span.label.pull-right Austin Learning Center
+						%span.pull-right.job-title Director of Education
+
+
+					.well
+						%p My role at the Austin Learning Center has been extremely engaging and rewarding.  Our owner, Becky Fliss, and I have built the company from the ground up together based on hard work, respect for our clients, and very high standards for our staff.  As is the case with most small companies, my role has changed over time as our business has grown.
+						%p I am an expert in all levels of high school math and physics.  Each year I have worked closely with dozens of students to help them develop and succeed in their math and physics courses.  My priority as Director of Education has been to ensure the highest quality possible in our tutoring staff and to support our tutors through my pedagogical perspective.  I am the lead interviewer of all prospective academic staff: prodding their fluency in subject matter as well as gauging their ability to convey ideas and respond to student needs.  Over their time at the Austin Learning Center, I am a source of continuing support for our tutors as they encounter problematic assignments, attempt new approaches with students, or perhaps struggle with insight into their own coursework.
+						%p.last In addition to my role as director I am also the internal technology department for our business.  This includes problem solving our network issues, resolving software problems on all our computers, making modifications to our website, properly configuring new devices, and attempting to resolve issues we have with our cloud serving.
+				%br
+				.popout
+					%h4.uppercase
+						%span.label.label-inverse.pull-right 2003-Present
+						%span.pull-right.job-title Freelance Sports Writer and Blogger
+
+					.well
+						%p.last Over the last decade I have written articles and posts in a variety of formats concerning college football.  I have established credibility over time as the most technically knowledgeable voice covering Texas Longhorn Football.  This coverage includes online blog articles, instructive videos, articles for print in annual magazines as well as forum discussion on various subscription based websites.
+				%br
+				.popout
+					%h4.uppercase
+						%span.label.label-inverse.pull-right 2004-2006
+						%span.label.pull-right Austin Learning Center
+						%span.pull-right.job-title Tutor
+					.well
+						%p.last As the first hired tutor at a fledging center in 2004, I was a major part of establishing our reputation as the premier academic tutoring service for students in Austin.  Working with students from every private and public school in the area has exposed me to a wide variety of teaching techniques, curriculum choices, and academic cultures.  This experience has informed my own working knowledge of subject matter and allowed me greater ability to adjust and support each student by teaching in a manner that offers them the best chance for success in their particular academic environment.
+				%br
+				.popout
+					%h4.uppercase
+						%span.label.label-inverse.pull-right 2004-2006
+						%span.label.pull-right Cathedral School of Saint Mary’s
+						%span.pull-right.job-title Teacher
+					.well
+						%p.last My first two years out of college I taught middle school math and science for sixth, seventh, and eighth grades.  With six unique preps a day in a very small school, I learned a great deal about setting the tone for my students daily through example, curriculum, feedback, and advice.  As a teacher at the Cathedral School I had the opportunity to design my curriculums in math and science, coach our flag football team, and lead several class trips around the state.  Saint Mary’s is a small family that I was very happy to be a part of and I have stayed in contact with many of my former students as they’ve made their way into college.
+				%br
+				.popout
+					%h4.uppercase
+						%span.label.label-inverse.pull-right 1999-2001
+						%span.label.pull-right Compuware
+						%span.pull-right.job-title Software Engineering Consultant
+					.well
+						%p.last While pursuing on my undergraduate degree, I worked as a full-time software consultant during the dot-com boom in Austin.  In my first role at GlobeSet, I redesigned the web crawling aspects of an online purchasing product and subsequently managed a team of twenty consultants who were maintaining the WEBL code base.  From there I was tasked with reworking a dynamically linked library in C++ to communicate with smart-card reading devices.  Finally I worked with a team at Honeywell helping them adapt their software to interpret and display data from their down-hole oil drilling instruments.
+		%br
+
+		.row
+			.span3
+				%h2.uppercase Education
+			.span9
+				.popout
+					%h4.uppercase
+						%span.label.label-inverse.pull-right 2004
+						%span.label.pull-right University of Texas
+						%span.pull-right.job-title B.S. Theoretical Mathematics
+					.well
+						%p.last Although I eventually decided to pursue a degree in mathematics, I studied both electrical engineering and computer science for two years each.  This diverse exposure to reasoning and technology in my undergraduate courses both reflected and further informed my interests in algorithm design, theory testing, and practical problem solving.
+		%br

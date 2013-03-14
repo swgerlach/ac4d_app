@@ -17,4 +17,12 @@ window.log = ->
 ) window.console = window.console or {}
 
 # place any jQuery/helper plugins in here, instead of separate, slower script files.
-
+customScroll = (targetBlock, target) ->
+  $('.custom-brick').hide()
+  $('div[id^="'+targetBlock+'"]').show()
+  $('html, body').animate
+    scrollTop: $('#'+targetBlock).offset().top - 60
+    500
+  $('html, body').animate
+    scrollTop: $('#'+target).offset().top - 60
+    2000
