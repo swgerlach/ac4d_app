@@ -1,4 +1,7 @@
 class StaticPagesController < ApplicationController
+  before_filter do
+    headers['Cache-Control'] = 'public; max-age=86400'
+  end
 
   caches_page :home, :inflection, :resume, :bio
 
