@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
 
-  caches_page :home, :inflection, :resume, :bio, :portfolio
+  caches_page :home, :inflection, :resume, :bio
 
   def home
   end
