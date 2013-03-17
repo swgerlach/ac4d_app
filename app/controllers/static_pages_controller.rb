@@ -1,4 +1,7 @@
 class StaticPagesController < ApplicationController
+
+  caches_page :home, :inflection, :resume, :bio, :portfolio
+
   def home
   end
 
@@ -16,6 +19,4 @@ class StaticPagesController < ApplicationController
     params.delete(:target)
   end
 
-  def video_process_flow
-  end
 end

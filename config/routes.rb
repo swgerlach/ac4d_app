@@ -4,7 +4,6 @@ Ac4dApp::Application.routes.draw do
   match '/resume',      to: 'static_pages#resume'
   match '/bio',         to: 'static_pages#bio'
   match '/portfolio',   to: 'static_pages#portfolio'
-  match '/processflow',  to: 'static_pages#video_process_flow'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
