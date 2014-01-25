@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rails'
 gem 'haml-rails'
 gem "font-awesome-rails"
-gem 'rack-cachely'
 gem 'newrelic_rpm'
 
 # Bundle edge Rails instead:
