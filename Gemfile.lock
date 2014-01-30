@@ -76,7 +76,6 @@ GEM
     mime-types (1.21)
     modernizr-rails (2.6.2)
     multi_json (1.7.1)
-    newrelic_rpm (3.5.4.33)
     nokogiri (1.5.7)
     pg (0.14.1)
     polyglot (0.3.3)
@@ -157,7 +156,6 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   modernizr-rails
-  newrelic_rpm
   pg
   rails
   rspec-rails
