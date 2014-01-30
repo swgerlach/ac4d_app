@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails'
 gem 'haml-rails'
 gem "font-awesome-rails"
-#gem 'newrelic_rpm'
+gem 'newrelic_rpm'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
